@@ -22,6 +22,7 @@ public class WorldMaster {
             con.setDoOutput(true);
             DataOutputStream wr = new DataOutputStream(con.getOutputStream());
             wr.writeBytes(postParams);
+            //committest
             wr.flush();
             wr.close();
             int responseCode = con.getResponseCode();
